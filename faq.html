@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veelgestelde Vragen (FAQ) | Scouts & Gidsen Kramaai Mollem</title>
+  <meta name="description"
+    content="Vind antwoorden op veelgestelde vragen over Scouts Kramaai Mollem: adres, rekeningnummer, inschrijvingen, kampdata en fiscaal attest." />
+  <link rel="icon" type="image/png" href="assets/images/brand/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/components.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigatie Component -->
+  <site-header></site-header>
+
+  <main>
+    <!-- Banner -->
+    <section class="section"
+      style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color:#ffffff; padding: 4rem 0;">
+      <div class="container" style="text-align:center;">
+        <h1 style="font-size:3rem; color:#ffffff; margin-bottom:1rem;">Veelgestelde Vragen</h1>
+        <p style="font-size:1.15rem; color:rgba(255,255,255,0.9); max-width:700px; margin:0 auto;">
+          Vind hier snel antwoord op al jouw vragen over Scouts & Gidsen Kramaai Mollem.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Sectie -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Info Banner Vraag niet beantwoord -->
+        <div class="card"
+          style="max-width:840px; margin:0 auto 2.5rem; background:rgba(42, 157, 143, 0.08); border:1px solid rgba(42, 157, 143, 0.25); border-radius:var(--radius-md); padding:1.15rem 1.5rem; display:flex; align-items:center; gap:1rem;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.2"
+            style="flex-shrink:0;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <p style="margin:0; font-size:1rem; color:var(--color-primary-dark); line-height:1.5;">
+            Indien u een vraag heeft die hieronder niet beantwoord wordt, stuur dan een mailtje met uw vraag naar: <a
+              href="mailto:groepsleiding@kramaai.be"
+              style="font-weight:700; color:var(--color-primary); text-decoration:underline;">groepsleiding@kramaai.be</a>
+          </p>
+        </div>
+
+        <!-- Accordion Container (Gevuld via data.js en main.js) -->
+        <div class="faq-accordion" id="faqContainer"></div>
+
+        <!-- Vraag niet gevonden box -->
+        <div class="card faq-contact-card">
+          <h3 style="font-size:1.45rem; color:var(--color-primary-dark); margin-bottom:0.5rem;">Staat jouw vraag er niet
+            tussen?</h3>
+          <p style="color:var(--color-text-muted); margin-bottom:1.5rem;">
+            Aarzel niet om een mailtje te sturen naar onze groepsleiding. We helpen je met veel plezier verder!
+          </p>
+          <a href="mailto:groepsleiding@kramaai.be" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Mail groepsleiding@kramaai.be
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <site-footer></site-footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

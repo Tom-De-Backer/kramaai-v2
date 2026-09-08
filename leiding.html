@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leidingploeg 2025 - 2026 | Scouts & Gidsen Kramaai Mollem</title>
+  <meta name="description"
+    content="Maak kennis met de leiding van Scouts & Gidsen Kramaai Mollem voor het scoutsjaar 2025-2026. Bekijk namen, totems en e-mailadressen per tak." />
+  <link rel="icon" type="image/png" href="assets/images/brand/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/components.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigatie Component -->
+  <site-header></site-header>
+
+  <main>
+    <!-- Banner -->
+    <section class="section"
+      style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color:#ffffff; padding: 4rem 0;">
+      <div class="container" style="text-align:center;">
+        <h1 style="font-size:3rem; color:#ffffff; margin-bottom:1rem;">Leidersploeg</h1>
+        <p style="font-size:1.15rem; color:rgba(255,255,255,0.9); max-width:700px; margin:0 auto;">
+          Een bende enthousiaste vrijwilligers die elke week klaarstaan om de leden een onvergetelijke zondagnamiddag te
+          bezorgen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Groepsleiding Spotlight Card -->
+    <section class="section" style="padding-bottom:1.5rem;">
+      <div class="container" style="max-width:1040px;">
+        <div class="card"
+          style="background:linear-gradient(135deg, #f0f7f3 0%, var(--color-surface) 100%); border:2px solid var(--color-primary-light); margin-bottom:2.5rem;">
+          <div
+            style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1.5rem; margin-bottom:1.25rem;">
+            <div>
+              <h2 style="font-size:1.85rem; color:var(--color-primary-dark); margin-top:0.5rem;">Groepsleiding</h2>
+            </div>
+            <a href="mailto:groepsleiding@kramaai.be" class="btn btn-primary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              groepsleiding@kramaai.be
+            </a>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.25rem;">
+            <!-- Kobe -->
+            <div
+              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
+              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Kobe Gysens</div>
+              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
+                Ondeugende Ekster</div>
+              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
+                  href="mailto:kobe@kramaai.be">kobe@kramaai.be</a></div>
+              <div style="font-size:0.88rem;"><a href="tel:+32474677075"
+                  style="color:var(--color-accent); font-weight:700;">+32 474 67 70 75</a></div>
+            </div>
+
+            <!-- Victor -->
+            <div
+              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
+              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Victor Boterdaele</div>
+              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
+                Zorgzame Golden Retriever</div>
+              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
+                  href="mailto:victor@kramaai.be">victor@kramaai.be</a></div>
+              <div style="font-size:0.88rem;"><a href="tel:+32478670378"
+                  style="color:var(--color-accent); font-weight:700;">+32 478 67 03 78</a></div>
+            </div>
+
+            <!-- Wout -->
+            <div
+              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
+              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Wout Huysman</div>
+              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
+                Respectvol Grijs Bokje</div>
+              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
+                  href="mailto:wout@kramaai.be">wout@kramaai.be</a></div>
+              <div style="font-size:0.88rem;"><a href="tel:+32470093061"
+                  style="color:var(--color-accent); font-weight:700;">+32 470 09 30 61</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filterknoppen per Tak -->
+        <div class="filter-tabs" id="leidingFilterTabs">
+          <button class="filter-btn active" data-filter="kapoenen">Kapoenen</button>
+          <button class="filter-btn" data-filter="welpen">Welpen</button>
+          <button class="filter-btn" data-filter="bevers">Bevers</button>
+          <button class="filter-btn" data-filter="jonggivers">Jong-Givers</button>
+          <button class="filter-btn" data-filter="givers">Givers</button>
+          <button class="filter-btn" data-filter="jins">Jins</button>
+        </div>
+
+        <!-- Leiding Tabel -->
+        <div class="leiding-table-wrap">
+          <table class="leiding-table">
+            <thead>
+              <tr>
+                <th>Naam</th>
+                <th>Totem</th>
+                <th>E-mail</th>
+              </tr>
+            </thead>
+            <tbody id="leidingTableBody">
+              <!-- Dynamisch gevuld via main.js & data.js -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <site-footer></site-footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

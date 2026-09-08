@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scouts & Gidsen Kramaai Mollem | Welkom</title>
+  <meta name="description"
+    content="Officiële website van Scouts & Gidsen Kramaai Mollem. Ontdek onze wekelijkse vergaderingen, takken, kalender, inschrijvingen en sfeerbeelden." />
+  <link rel="icon" type="image/png" href="assets/images/brand/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/components.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigatie Component -->
+  <site-header></site-header>
+
+  <main>
+    <!-- Hero Sectie -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Avontuur, vriendschap & plezier in <span>Mollem</span>
+          </h1>
+          <p class="hero-description">
+            Welkom bij Scouts Kramaai Mollem! Elke zondagnamiddag verzamelen meer dan honderd enthousiaste
+            leden aan onze scoutslokalen voor onvergetelijke spelen, bosspelen, sjorringen en kampavonturen.
+          </p>
+          <div class="hero-actions">
+            <a href="inschrijven.html" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+              Inschrijven
+            </a>
+            <a href="takken.html" class="btn btn-secondary">Ontdek Onze Takken</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="assets/images/hero/kamp-1.jpg" alt="Scouts Kramaai Mollem op kamp" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Belangrijke Info Strook -->
+    <section style="background:var(--color-surface); border-bottom:1px solid var(--color-border); padding:1.5rem 0;">
+      <div class="container"
+        style="display:flex; flex-wrap:wrap; justify-content:space-around; gap:1.5rem; text-align:center;">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div
+            style="width:40px; height:40px; border-radius:50%; background:var(--color-primary-subtle); display:flex; align-items:center; justify-content:center; color:var(--color-primary-dark);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div style="text-align:left;">
+            <div style="font-weight:700; font-size:0.95rem;">Wekelijkse vergadering</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted);">Zondag van 14u00 tot 17u00</div>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div
+            style="width:40px; height:40px; border-radius:50%; background:var(--color-primary-subtle); display:flex; align-items:center; justify-content:center; color:var(--color-primary-dark);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div style="text-align:left;">
+            <div style="font-weight:700; font-size:0.95rem;">Onze scoutslokalen</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted);">Kasteelstraat 47a, 1730 Mollem</div>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div
+            style="width:40px; height:40px; border-radius:50%; background:var(--color-primary-subtle); display:flex; align-items:center; justify-content:center; color:var(--color-primary-dark);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div style="text-align:left;">
+            <div style="font-weight:700; font-size:0.95rem;">Voor iedereen</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted);">Van 6 tot 18 jaar (Kapoenen t/m Jins)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content: Nieuws & Kalender (Live Feeds) -->
+    <section class="section" id="nieuws-kalender">
+      <div class="container">
+        <div class="home-split-grid">
+
+          <!-- Linkerkolom: Nieuwsberichten -->
+          <div class="news-feed-column">
+            <div class="news-header-box">
+              <h2>Laatste Nieuws</h2>
+            </div>
+
+            <div id="newsFeedContainer">
+              <div style="padding:2rem; text-align:center; color:var(--color-text-muted);">
+                <p>Nieuwsberichten laden...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rechterkolom: Kalender & Steunacties -->
+          <aside class="calendar-column" id="kalender">
+            <div class="calendar-box">
+              <div class="calendar-header">
+                <h3>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Kalender
+                </h3>
+              </div>
+
+              <!-- Dynamische Kalender Items -->
+              <div class="calendar-list" id="calendarListContainer">
+                <div style="padding:1.5rem 0; text-align:center; color:var(--color-text-muted);">
+                  <p>Kalender laden...</p>
+                </div>
+              </div>
+
+              <!-- Trooper & Steun Acties -->
+              <div class="steun-widget">
+                <div class="steun-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  Steun Scouts Mollem gratis!
+                </div>
+                <p class="steun-text">
+                  Bestel je online via Trooper of Bol? Dan gaat er een percentage van jouw aankoopbedrag integraal naar
+                  onze
+                  scoutsgroep, zonder dat het jou een cent extra kost!
+                </p>
+                <div class="steun-badge">
+                  <img src="assets/images/brand/trooper.gif" alt="Trooper logo" />
+                  <a href="https://www.trooper.be/kramaai" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary">
+                    Shop via Trooper
+                  </a>
+                </div>
+                <div class="steun-badge">
+                  <img src="assets/images/brand/bol.svg" alt="Bol logo" style="height: 24px; width: auto;" />
+                  <a href="https://partner.bol.com/click/click?p=2&t=url&s=39069&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fbe%2F&name=de%20winkel%20van%20ons%20allemaal"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Shop via Bol
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Takken Highlight Sectie -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Leeftijdsgroepen</span>
+          <h2 class="section-title">Onze Takken</h2>
+          <p class="section-subtitle">
+            Bij Scouts Mollem is elk lid ingedeeld volgens leeftijd. Zo beleeft ieder kind activiteiten die perfect
+            aansluiten bij hun leefwereld.
+          </p>
+        </div>
+
+        <div class="takken-grid">
+          <!-- Kapoenen -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-kapoenen);">
+              <span class="tak-card-title">Kapoenen</span>
+              <span class="tak-card-age">6 - 8 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">1ste & 2de leerjaar</div>
+              <p class="tak-card-desc">Het leven van een kapoen is vol spel, verwondering en fantasie. Spelenderwijs
+                ontdekken ze het scoutingleven.</p>
+              <a href="takken.html#kapoenen" class="btn btn-outline btn-sm">Meer over Kapoenen &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Welpen -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-welpen);">
+              <span class="tak-card-title">Welpen</span>
+              <span class="tak-card-age">8 - 10 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">3de & 4de leerjaar</div>
+              <p class="tak-card-desc">Guitige tieners die zelf dingen leren doen, volop kansen krijgen om te
+                experimenteren en samen te spelen.</p>
+              <a href="takken.html#welpen" class="btn btn-outline btn-sm">Meer over Welpen &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Bevers -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-bevers);">
+              <span class="tak-card-title">Bevers</span>
+              <span class="tak-card-age">10 - 12 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">5de & 6de leerjaar</div>
+              <p class="tak-card-desc">Stoere bevers die leren sjorren, knopen leggen en stapsgewijs kennis maken met
+                verantwoordelijkheid.</p>
+              <a href="takken.html#bevers" class="btn btn-outline btn-sm">Meer over Bevers &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Jong-Givers -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-jonggivers);">
+              <span class="tak-card-title">Jong-Givers</span>
+              <span class="tak-card-age">11 - 13 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">1ste & 2de middelbaar</div>
+              <p class="tak-card-desc">Avontuur, vlottentochten, patrouilletenten en koken op houtvuur: hier begint het
+                echte scoutingwerk!</p>
+              <a href="takken.html#jonggivers" class="btn btn-outline btn-sm">Meer over Jong-Givers &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Givers -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-givers);">
+              <span class="tak-card-title">Givers</span>
+              <span class="tak-card-age">14 - 17 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">3de t/m 5de middelbaar</div>
+              <p class="tak-card-desc">Ruimte voor grote projecten, een 3-daagse met de fiets op kamp, leefweken en
+                hechte vriendschapsbanden.</p>
+              <a href="takken.html#givers" class="btn btn-outline btn-sm">Meer over Givers &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Jins -->
+          <div class="tak-card">
+            <div class="tak-card-header" style="background:var(--tak-jins);">
+              <span class="tak-card-title">Jins</span>
+              <span class="tak-card-age">17 - 18 jaar</span>
+            </div>
+            <div class="tak-card-body">
+              <div class="tak-card-grades">6de middelbaar</div>
+              <p class="tak-card-desc">Jij en Ik een Noodzaak! De overgang van lid naar leiding: eigen kamp organiseren
+                en op buitenlandse reis.</p>
+              <a href="takken.html#jins" class="btn btn-outline btn-sm">Meer over Jins &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor Carrousel / Marquee -->
+    <section class="sponsors-section">
+      <div class="container">
+        <div class="sponsors-title-wrap">
+          <span class="section-tag">Met dank aan</span>
+          <h3 style="font-size:1.5rem; color:var(--color-primary-dark);">Onze Gewaardeerde Sponsors</h3>
+        </div>
+      </div>
+      <div class="sponsors-track-container">
+        <div class="sponsors-track" id="sponsorsTrack">
+          <!-- Dynamisch gevuld via main.js & data.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <site-footer></site-footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/calendar-news.js"></script>
+</body>
+
+</html>
