@@ -4,28 +4,54 @@
  */
 
 // Sponsors gegevens
-const SPONSORS_DATA = [
-  { name: "Albert Heijn Merchtem", site: "https://www.facebook.com/ahmerchtem/", logo: "assets/images/sponsors/ah-merchtem.png" },
-  { name: "Cornet", site: "https://www.cornetbier.be", logo: "assets/images/sponsors/cornet.png" },
-  { name: "BrightBoard", site: "https://brightboard.eu/", logo: "assets/images/sponsors/brightboard.jpeg" },
-  { name: "Elbo BVBA", site: "https://www.facebook.com/ELBObvba", logo: "assets/images/sponsors/elbo.jpeg" },
-  { name: "'T Gouden Fritje", site: "https://www.facebook.com/T-Gouden-Fritje-790272917985589/", logo: "assets/images/sponsors/gouden-fritje.png" },
-  { name: "Techsquad", site: "https://techsquad.be/", logo: "assets/images/sponsors/techsquad.png" },
-  { name: "KI Music", site: "https://ki-music.be/", logo: "assets/images/sponsors/ki-music.png" },
-  { name: "Premium E-Bike Store Asse", site: "https://www.ebikestoreasse.be/nl/", logo: "assets/images/sponsors/ebike-store.jpg" },
-  { name: "Praktijk Vitalis", site: "https://www.praktijkvitalis.be/", logo: "assets/images/sponsors/vitalis.jpg" },
-  { name: "Heyvaert Verzekeringen", site: "http://www.heyvaert.eu", logo: "assets/images/sponsors/heyvaert.png" },
-  { name: "Mechanic International", site: "https://www.m-i.be/", logo: "assets/images/sponsors/mi.png" },
-  { name: "Wijnbar-t", site: "https://wijnbar-t.be/", logo: "assets/images/sponsors/wijnbart.jpg" },
-  { name: "White4you", site: "https://www.white4you.be/", logo: "assets/images/sponsors/white4you.png" },
-  { name: "Schrijnwerkerij Lauwers", site: "https://www.bouwersgids.be/zoek_een_vakman?aannemer=198", logo: "assets/images/sponsors/lauwers.jpg" },
-  { name: "To Bounce", site: "https://www.tobounce.be/", logo: "assets/images/sponsors/to-bounce.png" },
-  { name: "Peugeot Van Weyenberg Asse", site: "https://garage.peugeot.be/nl/vanweyenbergh/?location=Asse%7C0", logo: "assets/images/sponsors/van-weyenberg.png" },
-  { name: "JD Works", site: "https://jdworks.be", logo: "assets/images/sponsors/jdworks.jpeg" },
-  { name: "Wouter Tistaert BVBA", site: "", logo: "assets/images/sponsors/wouter-tistaert.png" },
-  { name: "Belz", site: "", logo: "assets/images/sponsors/belz.jpeg" },
-  { name: "Lonost BV", site: "", logo: "assets/images/sponsors/lonost.jpg" }
-];
+const SPONSORS_DATA = {
+    head: [
+        { name: "Elbo BVBA", site: "https://www.facebook.com/ELBObvba", logo: "assets/images/sponsors/elbo.jpeg" },
+        {
+            name: "'T Gouden Fritje",
+            site: "https://www.facebook.com/T-Gouden-Fritje-790272917985589/",
+            logo: "assets/images/sponsors/gouden-fritje.png",
+        },
+        { name: "Techsquad", site: "https://techsquad.be/", logo: "assets/images/sponsors/techsquad.png" },
+        { name: "KI Music", site: "https://ki-music.be/", logo: "assets/images/sponsors/ki-music.png" },
+        {
+            name: "Premium E-Bike Store Asse",
+            site: "https://www.ebikestoreasse.be/nl/",
+            logo: "assets/images/sponsors/ebike-store.jpg",
+        },
+        { name: "Lonost BV", site: "", logo: "assets/images/sponsors/lonost.jpg" },
+    ],
+    platinum: [
+        { name: "Praktijk Vitalis", site: "https://www.praktijkvitalis.be/", logo: "assets/images/sponsors/vitalis.jpg" },
+        { name: "Heyvaert Verzekeringen", site: "http://www.heyvaert.eu", logo: "assets/images/sponsors/heyvaert.png" },
+        { name: "Mechanic International", site: "https://www.m-i.be/", logo: "assets/images/sponsors/mi.png" },
+        {
+            name: "Albert Heijn Merchtem",
+            site: "https://www.facebook.com/ahmerchtem/",
+            logo: "assets/images/sponsors/ah-merchtem.png",
+        },
+    ],
+    golden: [
+        { name: "Wijnbar-t", site: "https://wijnbar-t.be/", logo: "assets/images/sponsors/wijnbart.jpg" },
+        { name: "Belz", site: "", logo: "assets/images/sponsors/belz.jpeg" },
+        { name: "Cornet", site: "https://www.cornetbier.be", logo: "assets/images/sponsors/cornet.png" },
+        { name: "Wouter Tistaert BVBA", site: "", logo: "assets/images/sponsors/wouter-tistaert.png" },
+        { name: "White4you", site: "https://www.white4you.be/", logo: "assets/images/sponsors/white4you.png" },
+        {
+            name: "Schrijnwerkerij Lauwers",
+            site: "https://www.bouwersgids.be/zoek_een_vakman?aannemer=198",
+            logo: "assets/images/sponsors/lauwers.jpg",
+        },
+        { name: "BrightBoard", site: "https://brightboard.eu/", logo: "assets/images/sponsors/brightboard.jpeg" },
+        { name: "To Bounce", site: "https://www.tobounce.be/", logo: "assets/images/sponsors/to-bounce.png" },
+        {
+            name: "Peugeot Van Weyenberg Asse",
+            site: "https://garage.peugeot.be/nl/vanweyenbergh/?location=Asse%7C0",
+            logo: "assets/images/sponsors/van-weyenberg.png",
+        },
+        { name: "JD Works", site: "https://jdworks.be", logo: "assets/images/sponsors/jdworks.jpeg" },
+    ],
+};
 
 // Takken informatie
 const TAKKEN_DATA = [

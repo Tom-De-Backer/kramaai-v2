@@ -99,8 +99,12 @@ function initSponsorsTrack() {
   const track = document.getElementById('sponsorsTrack');
   if (!track || typeof SPONSORS_DATA === 'undefined') return;
 
+  let sponsors = SPONSORS_DATA.head;
+  if (new Date(2026, 9, 3, 0, 0, 0, 0) > new Date()) sponsors = sponsors.concat(SPONSORS_DATA.platinum);
+  if (new Date(2026, 6, 3, 0, 0, 0, 0) > new Date()) sponsors = sponsors.concat(SPONSORS_DATA.golden);
+
   // Render items tweemaal voor een naadloze oneindige marquee loop
-  const logos = [...SPONSORS_DATA, ...SPONSORS_DATA].map(sponsor => {
+  const logos = [...sponsors, ...sponsors].map(sponsor => {
     const linkStart = sponsor.site ? `<a href="${sponsor.site}" target="_blank" rel="noopener noreferrer" title="${sponsor.name}">` : `<div title="${sponsor.name}">`;
     const linkEnd = sponsor.site ? `</a>` : `</div>`;
     return `
