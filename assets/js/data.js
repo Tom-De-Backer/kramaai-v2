@@ -219,6 +219,7 @@ const FOTO_ALBUMS = [
 ];
 
 // Veelgestelde vragen (FAQ)
+const campDate = 3;
 const FAQS_DATA = [
   {
     q: "Waar kan ik Scouts Mollem vinden?",
@@ -238,7 +239,7 @@ const FAQS_DATA = [
   },
   {
     q: "Wanneer valt het kamp dit jaar?",
-    a: "Welpen, Bevers en Jong-Givers trekken van 4 augustus tot 14 augustus op kamp. Kapoenen gaan van 4 tot 8 augustus. Givers gaan voor 12 dagen op kamp en vertrekken al op 3 augustus. De Jins reizen traditiegetrouw naar het buitenland. Na hun buitenlands avontuur, is het de gewoonte dat ze samen met de andere takken het gewone kamp in de Ardennen afsluiten."
+    a: `Welpen, Bevers en Jong-Givers trekken van ${campDate} augustus tot ${campDate + 10} augustus op kamp. Kapoenen gaan van ${campDate} tot ${campDate + 4} augustus. Givers gaan voor 12 dagen op kamp en vertrekken al op ${campDate - 1} augustus. De Jins reizen traditiegetrouw naar het buitenland. Na hun buitenlands avontuur, is het de gewoonte dat ze samen met de andere takken het gewone kamp in de Ardennen afsluiten.`
   },
   {
     q: "Waar kan ik Scouts Mollem volgen?",
