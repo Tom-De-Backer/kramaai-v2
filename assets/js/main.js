@@ -195,8 +195,8 @@ function initLeidingFilter() {
   }
 
   const initialActive = filterTabs ? filterTabs.querySelector('.filter-btn.active') : null;
-  const initialFilter = initialActive ? initialActive.dataset.filter : 'kapoenen';
-  renderLeiding(initialFilter);
+  let filter = initialActive ? initialActive.dataset.filter : 'kapoenen';
+  renderLeiding(filter);
 
   if (filterTabs) {
     filterTabs.addEventListener('click', (e) => {
@@ -204,9 +204,13 @@ function initLeidingFilter() {
       if (!btn) return;
 
       document.querySelectorAll('#leidingFilterTabs .filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
 
-      const filter = btn.dataset.filter;
+	  if (btn.dataset.filter === filter) filter = 'all';
+	  else {
+		filter = btn.dataset.filter;
+      	btn.classList.add('active');
+	  }
+
       renderLeiding(filter);
     });
   }
