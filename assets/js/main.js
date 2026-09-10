@@ -168,7 +168,26 @@ function initFaqAccordion() {
 function initLeidingFilter() {
   const tableBody = document.getElementById('leidingTableBody');
   const filterTabs = document.getElementById('leidingFilterTabs');
+  const groepsleidingCard = document.getElementById('groepsleidingCard');
   if (!tableBody || typeof TAKKEN_DATA === 'undefined') return;
+
+  const groepsleiding = TAKKEN_DATA.find(tak => tak.id === 'groepsleiding');
+  if (groepsleiding && groepsleiding.leaders.length !== 0) {
+	groepsleiding.leaders.forEach(leader => {
+	  groepsleidingCard.innerHTML += `
+		<div
+		  style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
+		  <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">${leader.name}</div>
+		  <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
+			Zorgzame Golden Retriever</div>
+		  <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
+			  href="mailto:${leader.email}">${leader.email}</a></div>
+		  <div style="font-size:0.88rem;"><a href="tel:${leader.number}"
+			  style="color:var(--color-accent); font-weight:700;">${leader.number}</a></div>
+		</div>
+	  `;
+	});
+  }
 
   function renderLeiding(filterTak = 'all') {
     let html = '';
@@ -196,7 +215,13 @@ function initLeidingFilter() {
 
   const initialActive = filterTabs ? filterTabs.querySelector('.filter-btn.active') : null;
   let filter = initialActive ? initialActive.dataset.filter : 'kapoenen';
-  renderLeiding(filter);
+
+  if (new Date(2026, 8, 18, 21) > new Date()) {
+  	document.getElementById('noLeadersExplenation').style.display = '';
+	document.getElementById('leidingTable').style.display = 'none';
+	filterTabs.style.display = 'none';
+  } else renderLeiding(filter);
+
 
   if (filterTabs) {
     filterTabs.addEventListener('click', (e) => {
@@ -228,7 +253,8 @@ function initTakkenLeiders() {
     const container = document.querySelector(`#${tak.id} .tak-leaders-list`);
     if (!container || !Array.isArray(tak.leaders)) return;
 
-    container.innerHTML = tak.leaders.map(leader => {
+	if (tak.leaders.length === 0) container.innerHTML = `<p>De ${tak.name}leiding voor dit jaar word bekendgemaakt op onze diavond.</p>`
+    else container.innerHTML = tak.leaders.map(leader => {
       const isHead = leader.isHead;
       const headClass = isHead ? ' head' : '';
       const star = isHead ? '<span class="leader-star" title="Takleiding">★</span> ' : '';

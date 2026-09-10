@@ -49,44 +49,16 @@
             </a>
           </div>
 
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.25rem;">
-            <!-- Kobe -->
-            <div
-              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
-              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Kobe Gysens</div>
-              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
-                Ondeugende Ekster</div>
-              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
-                  href="mailto:kobe@kramaai.be">kobe@kramaai.be</a></div>
-              <div style="font-size:0.88rem;"><a href="tel:+32474677075"
-                  style="color:var(--color-accent); font-weight:700;">+32 474 67 70 75</a></div>
-            </div>
-
-            <!-- Victor -->
-            <div
-              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
-              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Victor Boterdaele</div>
-              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
-                Zorgzame Golden Retriever</div>
-              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
-                  href="mailto:victor@kramaai.be">victor@kramaai.be</a></div>
-              <div style="font-size:0.88rem;"><a href="tel:+32478670378"
-                  style="color:var(--color-accent); font-weight:700;">+32 478 67 03 78</a></div>
-            </div>
-
-            <!-- Wout -->
-            <div
-              style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
-              <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">Wout Huysman</div>
-              <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
-                Respectvol Grijs Bokje</div>
-              <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
-                  href="mailto:wout@kramaai.be">wout@kramaai.be</a></div>
-              <div style="font-size:0.88rem;"><a href="tel:+32470093061"
-                  style="color:var(--color-accent); font-weight:700;">+32 470 09 30 61</a></div>
-            </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.25rem;" id="groepsleidingCard">
           </div>
         </div>
+
+        <div class="card" style="padding:2.25rem; margin-bottom:2.5rem; display: none; " id="noLeadersExplenation">
+          <h3 style="font-size:1.5rem; margin-bottom:1rem; color:var(--color-primary-dark);">Leiding 2026-2027</h3>
+          <p>
+		  	De leidingsploegen voor het scoutsjaar 2026-2027 worden bekendgemaakt op de dia-avond op vrijdag 18 september om 19u op de gemeentelijke basisschool in Mollem.
+		  </p>
+		</div>
 
         <!-- Filterknoppen per Tak -->
         <div class="filter-tabs" id="leidingFilterTabs">
@@ -99,7 +71,7 @@
         </div>
 
         <!-- Leiding Tabel -->
-        <div class="leiding-table-wrap">
+        <div class="leiding-table-wrap" id="leidingTable">
           <table class="leiding-table">
             <thead>
               <tr>

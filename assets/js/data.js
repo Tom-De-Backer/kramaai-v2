@@ -53,6 +53,46 @@ const SPONSORS_DATA = {
     ],
 };
 
+const LEADERS_DATA = {
+    Tijs: { name: "Tijs De Jonge", totem: "Speelse Kauw", email: "tijs@kramaai.be" },
+    Romain: { name: "Romain Wouters", totem: "Respectvolle Schaarbek", email: "romain@kramaai.be" },
+    KobeB: { name: "Kobe Bogaert", totem: "Stoutmoedige Walrus", email: "kobeBogaert@kramaai.be" },
+    Wout: { name: "Wout Huysman", totem: "Respectvol Grijs Bokje", email: "wout@kramaai.be", number: "+32 470 09 30 61" },
+    Robbe: { name: "Robbe Tops", totem: "Betrouwbare Dolfijn", email: "robbe@kramaai.be" },
+    VictorB: { name: "Victor Boterdaele", totem: "Zorgzame Golden Retriever", email: "victor@kramaai.be", number: "+32 478 67 03 78" },
+    Remco: { name: "Remco Looverie", totem: "Goedhartige Vink", email: "remco@kramaai.be" },
+    Amber: { name: "Amber Gysens", totem: "Stoutmoedige Arassari", email: "amber@kramaai.be" },
+    Toon: { name: "Toon Esselens", totem: "Nonchalante Pumba", email: "toon@kramaai.be" },
+    Wiebe: { name: "Wiebe Luppens", totem: "Amusante Kolibrie", email: "wiebe@kramaai.be" },
+    Elise: { name: "Elise Asselman", totem: "Spontane scholekster", email: "elise@kramaai.be" },
+    Laura: { name: "Laura De Smedt", totem: "Attente Anoa", email: "laura@kramaai.be" },
+    Miel: { name: "Miel Meskens", totem: "Empathische Ooievaar", email: "miel@kramaai.be" },
+    Luka: { name: "Luka Heyvaert", totem: "Zorgeloze Secretarisvogel", email: "luka@kramaai.be" },
+    Leyla: { name: "Leyla Hoornaert", totem: "Tedere lepelaar", email: "leyla@kramaai.be", number: "+32 486 31 61 79" },
+    Matthijs: { name: "Matthijs Huysman", totem: "Enthousiaste Parkiet", email: "matthijs@kramaai.be" },
+    Luca: { name: "Luca Tastenoy", totem: "Onverschrokken Agame", email: "luca@kramaai.be" },
+    Emma: { name: "Emma Lammens", totem: "Goedgelovige Simia", email: "emma@kramaai.be" },
+    Lara: { name: "Lara Vebelen", totem: "Zorgzame sifaka", email: "lara@kramaai.be" },
+    Daan: { name: "Daan Heyvaert", totem: "Gezellige Streepmuis", email: "daan@kramaai.be" },
+    Fien: { name: "Fien De Baerdemaeker", totem: "Vastberaden spreeuw", email: "fien@kramaai.be" },
+    Jutte: { name: "Jutte Luppens", totem: "Standvastige Karekiet", email: "jutte@kramaai.be" },
+    Lente: { name: "Lente Wermoes", totem: "Competitief zeepaardje", email: "lente@kramaai.be" },
+    Nils: { name: "Nils Verbeken", totem: "Trotse Chimpansee", email: "nils@kramaai.be" },
+    Nora: { name: "Nora Koopmans", totem: "Uitbundige Noko", email: "nora@kramaai.be" },
+    Seppe: { name: "Seppe Engels", totem: "Ongeremde boxer", email: "seppe@kramaai.be" },
+    Lina: { name: "", totem: "", email: "lina@kramaai.be" },
+    Dante: { name: "", totem: "", email: "dante@kramaai.be" },
+    Lore: { name: "", totem: "", email: "lore@kramaai.be" },
+    Nina: { name: "", totem: "", email: "nina@kramaai.be" },
+    LouiseVB: { name: "", totem: "", email: "" },
+    Jarne: { name: "", totem: "", email: "jarne@kramaai.be" },
+    Tuur: { name: "", totem: "", email: "tuur@kramaai.be" },
+    Elle: { name: "Elle De Smedt", totem: "Guitige Groenling", email: "elle@kramaai.be" },
+    Noor: { name: "Noor Desseyn", totem: "Zorgzame Kapucijnaap", email: "noor@kramaai.be" },
+    LouiseB: { name: "", totem: "", email: "@kramaai.be" },
+    Kato: { name: "", totem: "", email: "kato@kramaai.be" },
+}
+
 // Takken informatie
 const TAKKEN_DATA = [
   {
@@ -64,15 +104,7 @@ const TAKKEN_DATA = [
     shortDesc: "Vol spel, fantasie en de eerste stapjes in het scoutingleven.",
     description: "Kapoenen zijn 6 tot 8 jaar. Ze ontdekken al spelend wat het is om scout of gids te zijn. Het leven van een kapoen is vol spel en fantasie. De leiding bedenkt spelen op maat van kapoenen en laat genoeg ruimte om op hun eigen impulsen in te gaan. Wat vinden ze leuk en wat kunnen ze al op die leeftijd?",
     leidingMail: "kapoenen@kramaai.be",
-    leaders: [
-      { name: "Matthijs Huysman", totem: "Enthousiaste Parkiet", email: "matthijs@kramaai.be", isHead: true },
-      { name: "Toon Esselens", totem: "Nonchalante Pumba", email: "toon@kramaai.be" },
-      { name: "Merlijn Devroede", totem: "Eigenaardig Penseelaapje", email: "merlijn@kramaai.be" },
-      { name: "Laura De Smedt", totem: "Attente Anoa", email: "laura@kramaai.be" },
-      { name: "Nora Koopmans", totem: "Uitbundige Noko", email: "nora@kramaai.be" },
-      { name: "Wout Huysman", totem: "Respectvol Grijs Bokje", email: "wout@kramaai.be" },
-      { name: "Fien De Baerdemaeker", totem: "Vastberaden spreeuw", email: "fien@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "welpen",
@@ -83,16 +115,7 @@ const TAKKEN_DATA = [
     shortDesc: "Guitige tieners die zelf dingen leren doen en volop fantasie beleven.",
     description: "Welpen zijn tussen 8 en 10 jaar, ze zijn dus guitige (bijna-) tieners die in het derde of vierde leerjaar zitten. Typisch voor de welpen is dat ze zelf dingen leren doen. Ze krijgen de ruimte en de kans om dingen uit te proberen en van elkaar te leren. De werking wordt ingekleed met verhalen en fantasie. Een welp groeit een millimeter per week, krijgt er op een jaar drie tanden bij en wordt elke week 5 gram zwaarder.",
     leidingMail: "welpen@kramaai.be",
-    leaders: [
-      { name: "Roxanne Hoornaert", totem: "Unieke Fazant", email: "roxanne@kramaai.be", isHead: true },
-      { name: "Leyla Hoornaert", totem: "Tedere lepelaar", email: "leyla@kramaai.be" },
-      { name: "Luka Heyvaert", totem: "Zorgeloze Secretarisvogel", email: "luka@kramaai.be" },
-      { name: "Elise Asselman", totem: "Spontane scholekster", email: "elise@kramaai.be" },
-      { name: "Romain Wouters", totem: "Respectvolle Schaarbek", email: "romain@kramaai.be" },
-      { name: "Seppe Engels", totem: "Ongeremde boxer", email: "seppe@kramaai.be" },
-      { name: "Emma Lammens", totem: "Goedgelovige Simia", email: "emma@kramaai.be" },
-      { name: "Klaas De Jonge", totem: "Amusant Nijlpaard", email: "klaas@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "bevers",
@@ -103,15 +126,7 @@ const TAKKEN_DATA = [
     shortDesc: "Samenwerken, technieken en sjorren ontdekken met volop plezier!",
     description: "Na 2 jaar welp te zijn, word je een stoere bever! Wie tussen 10 en 12 jaar is, dus in het 5e en 6e leerjaar zit, is een bever. Bever zijn betekent groeien, samenwerken, nog meer dingen zelfstandig leren doen, al meerdere knopen en sjorringen leren leggen. Spelenderwijs leren ze de werking van scouting kennen en raken ze vertrouwd met allerlei technieken. Stapsgewijs leren ze ook kennis maken met verantwoordelijkheid. Maar amuseren staat nog steeds op de eerste plaats!",
     leidingMail: "bevers@kramaai.be",
-    leaders: [
-      { name: "Amber Gysens", totem: "Stoutmoedige Arassari", email: "amber@kramaai.be", isHead: true },
-      { name: "Lara Vebelen", totem: "Zorgzame sifaka", email: "lara@kramaai.be" },
-      { name: "Nils Verbeken", totem: "Trotse Chimpansee", email: "nils@kramaai.be" },
-      { name: "Miel Meskens", totem: "Empathische Ooievaar", email: "miel@kramaai.be" },
-      { name: "Luca Tastenoy", totem: "Onverschrokken Agame", email: "luca@kramaai.be" },
-      { name: "Arno Engels", totem: "Behulpzame Berner Sennenhond", email: "arno@kramaai.be" },
-      { name: "Daan Heyvaert", totem: "Gezellige Streepmuis", email: "daan@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "jonggivers",
@@ -122,15 +137,7 @@ const TAKKEN_DATA = [
     shortDesc: "Avontuur, vlotten bouwen, koken op houtvuur en patrouilletenten.",
     description: "Jong-givers zijn tussen 11 en 13 jaar oud. Jonggivers houden van avontuur en steken graag de handen uit de mouwen. Ze vinden het leuk om inspraak te hebben en gaan graag nieuwe uitdagingen aan: vlottentocht, koken op houtvuur, slapen in patrouilletenten. Jonggivers leren samenwerken, engagement tonen en zich inzetten voor anderen. Zo ontdekken ze stilaan wat scouting echt inhoudt en leggen hun belofte met trots af. Jonggivers zitten op de wip tussen kind en puber. Hun leefwereld verandert razendsnel en wordt plots veel complexer. Al die veranderingen zijn soms overweldigend.",
     leidingMail: "jonggivers@kramaai.be",
-    leaders: [
-      { name: "Kobe Bogaert", totem: "Stoutmoedige Walrus", email: "kobeBogaert@kramaai.be", isHead: true },
-      { name: "Andreas Verhoeven", totem: "Oprechte Newfoundlander", email: "andreas@kramaai.be" },
-      { name: "Senne Lauwers", totem: "Schalkse Brulaap", email: "senne@kramaai.be" },
-      { name: "Remco Looverie", totem: "Goedhartige Vink", email: "remco@kramaai.be" },
-      { name: "Victor Boterdaele", totem: "Zorgzame Golden Retriever", email: "victor@kramaai.be" },
-      { name: "Jutte Luppens", totem: "Standvastige Karekiet", email: "jutte@kramaai.be" },
-      { name: "Lente Wermoes", totem: "Competitief zeepaardje", email: "lente@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "givers",
@@ -141,12 +148,7 @@ const TAKKEN_DATA = [
     shortDesc: "Grote projecten, leefweken, 3-daagse met de fiets en onvergetelijke vriendschap.",
     description: "Giver staat voor ‘Gidsen – Verkenners’. Hierbij horen de 14 tot 17-jarigen, dus weeral een tak hoger dan bij de jonggivers: meer verantwoordelijkheid, ruimte voor grotere projecten, met de groep zelf een snuifje avontuur realiseren, of uitgedaagd worden door elkaar… Dit vertaalt zich in onder andere gezellige vrijdagavondjes, een toffe fuif, op weekend met de trein, een 3-daagse met de fiets op kamp, leefweek, in-het-oog-springende constructies, enzoverder.",
     leidingMail: "givers@kramaai.be",
-    leaders: [
-      { name: "Robbe Tops", totem: "Betrouwbare Dolfijn", email: "robbe@kramaai.be", isHead: true },
-      { name: "Wiebe Luppens", totem: "Amusante Kolibrie", email: "wiebe@kramaai.be" },
-      { name: "Victor Carle", totem: "Dromerige Bever", email: "victor.carle@kramaai.be" },
-      { name: "Tijs De Jonge", totem: "Speelse Kauw", email: "tijs@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "jins",
@@ -157,11 +159,7 @@ const TAKKEN_DATA = [
     shortDesc: "Jij en Ik een Noodzaak: eigen jaar plannen en op buitenlands kamp!",
     description: "JIN staat voor ‘Jij en Ik een Noodzaak’ en zijn 17-18 jaar. Ze leven één jaar intens samen in hun tak als een speciale overstap van lid naar leiding. JIN’s werken gekke activiteiten uit in hun eigen jonge stijl. Al doende leren ze samenwerken en verantwoordelijkheid opnemen. Hieruit groeit engagement voor de groep en voor de samenleving. Jins steken hun eigen jaar en kamp ineen en gaan elk jaar op legendarisch buitenlands kamp.",
     leidingMail: "jins@kramaai.be",
-    leaders: [
-      { name: "Kobe Gysens", totem: "Ondeugende Ekster", email: "kobe@kramaai.be", isHead: true },
-      { name: "Joren Tops", totem: "Geestige Aap", email: "joren@kramaai.be" },
-      { name: "Jules Eeman", totem: "Nonchalante Lepelaar", email: "jules@kramaai.be" }
-    ]
+    leaders: [ ]
   },
   {
     id: "groepsleiding",
@@ -173,9 +171,8 @@ const TAKKEN_DATA = [
     description: "Groepsleiding zijn is een nobele taak. Ze zijn als een fakkel voor de groep: de personen die de groep door het donker gidsen. Ze lopen voorop en nemen medeleiding mee op sleeptouw. Als fakkel houden ze de groep samen met warmte en sfeer. Bij hen brandt het vuur van engagement.",
     leidingMail: "groepsleiding@kramaai.be",
     leaders: [
-      { name: "Kobe Gysens", totem: "Ondeugende Ekster", email: "kobe@kramaai.be", number: "+32 474 67 70 75", isHead: true },
-      { name: "Victor Boterdaele", totem: "Zorgzame Golden Retriever", email: "victor@kramaai.be", number: "+32 478 67 03 78" },
-      { name: "Wout Huysman", totem: "Respectvol Grijs Bokje", email: "wout@kramaai.be", number: "+32 470 09 30 61" }
+	  LEADERS_DATA.VictorB,
+	  LEADERS_DATA.Wout,
     ]
   }
 ];
