@@ -179,7 +179,8 @@ function initLeidingFilter() {
 		  style="background:#ffffff; border-radius:var(--radius-md); padding:1.25rem; border:1px solid var(--color-border);">
 		  <div style="font-weight:800; font-size:1.15rem; color:var(--color-primary-dark);">${leader.name}</div>
 		  <div style="color:var(--color-text-muted); font-style:italic; font-size:0.9rem; margin-bottom:0.5rem;">
-			Zorgzame Golden Retriever</div>
+			${leader.totem}
+		  </div>
 		  <div style="font-size:0.88rem; margin-bottom:0.25rem;"><a
 			  href="mailto:${leader.email}">${leader.email}</a></div>
 		  <div style="font-size:0.88rem;"><a href="tel:${leader.number}"
