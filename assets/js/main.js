@@ -253,7 +253,7 @@ function initTakkenLeiders() {
     const container = document.querySelector(`#${tak.id} .tak-leaders-list`);
     if (!container || !Array.isArray(tak.leaders)) return;
 
-	if (tak.leaders.length === 0) container.innerHTML = `<p>De ${tak.name}leiding voor dit jaar word bekendgemaakt op onze diavond.</p>`
+	if (tak.leaders.length === 0) container.innerHTML = `<p>De ${tak.name}leiding voor dit jaar wordt bekendgemaakt op onze diavond.</p>`
     else container.innerHTML = tak.leaders.map(leader => {
       const isHead = leader.isHead;
       const headClass = isHead ? ' head' : '';
