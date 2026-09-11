@@ -218,7 +218,7 @@ class SiteFooter extends HTMLElement {
               &copy; <span id="currentYear">${currentYear}</span> Scouts & Gidsen Kramaai Mollem. Alle rechten voorbehouden.
             </div>
             <div>
-              Ook zo'n website laten maken? Realisatie door <a href="https://www.backeit.be" target="_blank" rel="noopener">BackeIT &rarr;</a>
+              Ook zo'n website laten maken? Realisatie door <a href="https://backeit.be" target="_blank" rel="noopener">BackeIT &rarr;</a>
             </div>
           </div>
         </div>
