@@ -84,6 +84,13 @@
           </div>
         </div>
 
+        <div class="card" style="padding:2.25rem; margin-bottom:2.5rem; display:none" id="newRegistrations">
+          <h3 style="font-size:1.5rem; margin-bottom:1rem; color:var(--color-primary-dark);">Nieuwe inschrijvingen</h3>
+		  <p>Vanaf nu kunnen ook nieuwe leden zich inschrijven voor het nieuwe scoutsjaar via <a href="https://docs.google.com/forms/d/e/1FAIpQLSewvccGsmHxSuQGQKvHDtl7Q8D0eeUKHY5UWkdGWs8g5oCKNA/viewform?usp=dialog">deze</a> link.</p>
+		  <p>Na jullie inschrijving krijgen jullie een mail van de groepsleiding, in deze mail krijg je verdere informatie en of je inschrijving geslaagd is of niet. Voor meer informatie waarom jouw inschrijving kan mislukken bekijk je best de richtlijnen en voorrangsregels hieronder.</p>
+		  <p>Indien je vorig jaar al een lid bij ons was, dan heb je al een mail gekregen om je opnieuw in te schrijven en gebruik je best die link.</p>
+        </div>
+
         <!-- Richtlijnen & Voorrang Card -->
         <div class="card" style="padding:2.25rem; margin-bottom:2.5rem;">
           <h3 style="font-size:1.5rem; margin-bottom:1rem; color:var(--color-primary-dark);">Richtlijnen &
@@ -130,6 +137,14 @@
 
   <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+	  const newRegistrations = document.getElementById('newRegistrations');
+
+	  // Show the registration link after 19/09/2026 12:00
+	  if (new Date(2026, 8, 19, 12) < new Date()) {
+		  newRegistrations.style.display = '';
+	  }
+  </script>
 </body>
 
 </html>
