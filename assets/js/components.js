@@ -1,7 +1,56 @@
 /**
- * Scouts & Gidsen Kramaai Mollem - Reusable Web Components
+ * Scouts & Gidsen Kramaai Mollem - Reusable Web Components & Analytics
  * Vanilla JS Custom Elements voor navigatieheader en footer
  */
+
+/* ==========================================================================
+   Google Analytics 4 (GA4) - Centrale herbruikbare integratie
+   Metings-ID: G-YYFJJZWGKH | Stream-ID: 5439303613
+   ========================================================================== */
+(function initGoogleAnalytics() {
+  const GA_MEASUREMENT_ID = 'G-YYFJJZWGKH';
+
+  // Voorkom dubbele initialisatie
+  if (window.__gaInitialized) return;
+  window.__gaInitialized = true;
+
+  // Dynamisch het officiële gtag.js script inladen
+  const gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(gaScript);
+
+  // Initialiseer dataLayer en gtag()
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+
+  gtag('js', new Date());
+
+  // Bepaal een zuiver paginapad zonder .html en zonder index.html voor GA4
+  const rawPath = window.location.pathname || '/';
+  const cleanPath = rawPath.replace(/\/index(\.html)?$/i, '/').replace(/\.html$/i, '') || '/';
+  const fullPagePath = cleanPath + (window.location.search || '');
+  const cleanLocation = window.location.origin + fullPagePath + (window.location.hash || '');
+  const pageTitle = document.title || 'Scouts & Gidsen Kramaai Mollem';
+
+  // Configureer GA4 met expliciete paginanaam, pad en URL (zonder .html)
+  gtag('config', GA_MEASUREMENT_ID, {
+    page_title: pageTitle,
+    page_path: fullPagePath,
+    page_location: cleanLocation,
+    send_page_view: true
+  });
+
+  // Reusable helper voor event tracking op de website
+  window.trackEvent = function(eventName, eventParams = {}) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, eventParams);
+    }
+  };
+})();
 
 class SiteHeader extends HTMLElement {
   connectedCallback() {
