@@ -190,10 +190,10 @@ function initLeidingFilter() {
 	});
   }
 
-  function renderLeiding(filterTak = 'all') {
+  function renderLeiding(filterTak = 'all', filterGRL = true) {
     let html = '';
     TAKKEN_DATA.forEach(tak => {
-      if (filterTak !== 'all' && tak.id !== filterTak) return;
+      if ((filterTak !== 'all' && tak.id !== filterTak) || (filterGRL && tak.id === 'groepsleiding')) return;
 
       tak.leaders.forEach((leader, idx) => {
         const isHead = leader.isHead ? '<span style="color:var(--color-accent); font-weight:bold; margin-left:6px;" title="Takleiding">★ Takleiding</span>' : '';
@@ -248,14 +248,13 @@ function initLeidingFilter() {
  */
 function initTakkenLeiders() {
   const takLists = document.querySelectorAll('.tak-leaders-list');
-  if (!takLists.length || typeof TAKKEN_DATA === 'undefined') return;
+  if (!takLists.length || typeof TAKKEN_DATA === 'undefined' || new Date(2026, 8, 18, 21) > new Date()) return;
 
   TAKKEN_DATA.forEach(tak => {
     const container = document.querySelector(`#${tak.id} .tak-leaders-list`);
     if (!container || !Array.isArray(tak.leaders)) return;
 
-	if (tak.leaders.length === 0) container.innerHTML = `<p>De ${tak.name}leiding voor dit jaar wordt bekendgemaakt op onze diavond.</p>`
-    else container.innerHTML = tak.leaders.map(leader => {
+	if (tak.leaders.length !== 0) container.innerHTML = tak.leaders.map(leader => {
       const isHead = leader.isHead;
       const headClass = isHead ? ' head' : '';
       const star = isHead ? '<span class="leader-star" title="Takleiding">★</span> ' : '';
