@@ -206,6 +206,7 @@ function initLeidingFilter() {
 
       tak.leaders.forEach((leader, idx) => {
         const isHead = leader.isHead ? '<span style="color:var(--color-accent); font-weight:bold; margin-left:6px;" title="Takverantwoordelijke">★ Takverantwoordelijke</span>' : '';
+	  let phoneNumber = leader.isHead && leader.number ? `<br/><a style="color:var(--color-accent)" href="tel:${leader.number}">${leader.number}</a>` : "";
 
         html += `
           <tr data-tak="${tak.id}">
@@ -214,7 +215,10 @@ function initLeidingFilter() {
               <div style="font-size:0.75rem; color:var(--color-accent); font-weight:600; text-transform:uppercase;">${tak.name}</div>
             </td>
             <td class="leader-totem">${leader.totem || '-'}</td>
-            <td class="leader-email"><a href="mailto:${leader.email}">${leader.email}</a></td>
+            <td class="leader-email">
+			  <a href="mailto:${leader.email}">${leader.email}</a>
+			  ${phoneNumber}
+			</td>
           </tr>
         `;
       });
