@@ -190,10 +190,19 @@ function initLeidingFilter() {
 	});
   }
 
+  let videoCard = document.getElementById('introductionVideoCard');
+  let videoFrame = document.getElementById('introductionVideoFrame');
   function renderLeiding(filterTak = 'all', filterGRL = true) {
+	videoCard.style.display = 'none';
+	videoFrame.src = '';
+
     let html = '';
     TAKKEN_DATA.forEach(tak => {
       if ((filterTak !== 'all' && tak.id !== filterTak) || (filterGRL && tak.id === 'groepsleiding')) return;
+	  if (tak.id === filterTak) {
+		videoFrame.srcdoc = `<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/${tak.videoId}?autoplay=1><img src=https://img.youtube.com/vi/${tak.videoId}/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>`;
+		videoCard.style.display = '';
+	  }
 
       tak.leaders.forEach((leader, idx) => {
         const isHead = leader.isHead ? '<span style="color:var(--color-accent); font-weight:bold; margin-left:6px;" title="Takverantwoordelijke">★ Takverantwoordelijke</span>' : '';

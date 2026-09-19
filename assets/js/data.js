@@ -104,6 +104,7 @@ const TAKKEN_DATA = [
     shortDesc: "Vol spel, fantasie en de eerste stapjes in het scoutingleven.",
     description: "Kapoenen zijn 6 tot 8 jaar. Ze ontdekken al spelend wat het is om scout of gids te zijn. Het leven van een kapoen is vol spel en fantasie. De leiding bedenkt spelen op maat van kapoenen en laat genoeg ruimte om op hun eigen impulsen in te gaan. Wat vinden ze leuk en wat kunnen ze al op die leeftijd?",
     leidingMail: "kapoenen@kramaai.be",
+	videoId: "jU6CPADsgKM",
     leaders: [
 	  {...LEADERS_DATA.Jutte, isHead: true},
 	  LEADERS_DATA.KobeB,
@@ -122,6 +123,7 @@ const TAKKEN_DATA = [
     shortDesc: "Guitige tieners die zelf dingen leren doen en volop fantasie beleven.",
     description: "Welpen zijn tussen 8 en 10 jaar, ze zijn dus guitige (bijna-) tieners die in het derde of vierde leerjaar zitten. Typisch voor de welpen is dat ze zelf dingen leren doen. Ze krijgen de ruimte en de kans om dingen uit te proberen en van elkaar te leren. De werking wordt ingekleed met verhalen en fantasie. Een welp groeit een millimeter per week, krijgt er op een jaar drie tanden bij en wordt elke week 5 gram zwaarder.",
     leidingMail: "welpen@kramaai.be",
+	videoId: "R_qr-mHy9rk",
     leaders: [
 	  {...LEADERS_DATA.Nora, isHead: true},
 	  LEADERS_DATA.Lara,
@@ -141,6 +143,7 @@ const TAKKEN_DATA = [
     shortDesc: "Samenwerken, technieken en sjorren ontdekken met volop plezier!",
     description: "Na 2 jaar welp te zijn, word je een stoere bever! Wie tussen 10 en 12 jaar is, dus in het 5e en 6e leerjaar zit, is een bever. Bever zijn betekent groeien, samenwerken, nog meer dingen zelfstandig leren doen, al meerdere knopen en sjorringen leren leggen. Spelenderwijs leren ze de werking van scouting kennen en raken ze vertrouwd met allerlei technieken. Stapsgewijs leren ze ook kennis maken met verantwoordelijkheid. Maar amuseren staat nog steeds op de eerste plaats!",
     leidingMail: "bevers@kramaai.be",
+	videoId: "FQeMerDXST4",
     leaders: [
 	  {...LEADERS_DATA.Daan, isHead: true},
 	  LEADERS_DATA.Robbe,
@@ -160,6 +163,7 @@ const TAKKEN_DATA = [
     shortDesc: "Avontuur, vlotten bouwen, koken op houtvuur en patrouilletenten.",
     description: "Jong-givers zijn tussen 11 en 13 jaar oud. Jonggivers houden van avontuur en steken graag de handen uit de mouwen. Ze vinden het leuk om inspraak te hebben en gaan graag nieuwe uitdagingen aan: vlottentocht, koken op houtvuur, slapen in patrouilletenten. Jonggivers leren samenwerken, engagement tonen en zich inzetten voor anderen. Zo ontdekken ze stilaan wat scouting echt inhoudt en leggen hun belofte met trots af. Jonggivers zitten op de wip tussen kind en puber. Hun leefwereld verandert razendsnel en wordt plots veel complexer. Al die veranderingen zijn soms overweldigend.",
     leidingMail: "jonggivers@kramaai.be",
+	videoId: "SCOqggxdOIM",
     leaders: [
 	  {...LEADERS_DATA.Nils, isHead: true},
 	  LEADERS_DATA.Wout,
@@ -179,6 +183,7 @@ const TAKKEN_DATA = [
     shortDesc: "Grote projecten, leefweken, 3-daagse met de fiets en onvergetelijke vriendschap.",
     description: "Giver staat voor ‘Gidsen – Verkenners’. Hierbij horen de 14 tot 17-jarigen, dus weeral een tak hoger dan bij de jonggivers: meer verantwoordelijkheid, ruimte voor grotere projecten, met de groep zelf een snuifje avontuur realiseren, of uitgedaagd worden door elkaar… Dit vertaalt zich in onder andere gezellige vrijdagavondjes, een toffe fuif, op weekend met de trein, een 3-daagse met de fiets op kamp, leefweek, in-het-oog-springende constructies, enzoverder.",
     leidingMail: "givers@kramaai.be",
+	videoId: "c63NSyGN3Fg",
     leaders: [
 	  {...LEADERS_DATA.Matthijs, isHead: true},
 	  LEADERS_DATA.Miel,
@@ -196,6 +201,7 @@ const TAKKEN_DATA = [
     shortDesc: "Jij en Ik een Noodzaak: eigen jaar plannen en op buitenlands kamp!",
     description: "JIN staat voor ‘Jij en Ik een Noodzaak’ en zijn 17-18 jaar. Ze leven één jaar intens samen in hun tak als een speciale overstap van lid naar leiding. JIN’s werken gekke activiteiten uit in hun eigen jonge stijl. Al doende leren ze samenwerken en verantwoordelijkheid opnemen. Hieruit groeit engagement voor de groep en voor de samenleving. Jins steken hun eigen jaar en kamp ineen en gaan elk jaar op legendarisch buitenlands kamp.",
     leidingMail: "jins@kramaai.be",
+	videoId: "RdDwaf6e8kA",
     leaders: [
 	  {...LEADERS_DATA.Romain, isHead: true},
 	  LEADERS_DATA.Elise,
