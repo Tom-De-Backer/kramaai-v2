@@ -50,7 +50,7 @@
       window.gtag('event', eventName, eventParams);
     }
   };
-})();
+});
 
 class SiteHeader extends HTMLElement {
   connectedCallback() {
