@@ -60,15 +60,24 @@
 		  </p>
 		</div>
 
-        <!-- Filterknoppen per Tak -->
-        <div class="filter-tabs" id="leidingFilterTabs">
-          <button class="filter-btn active" data-filter="kapoenen">Kapoenen</button>
-          <button class="filter-btn" data-filter="welpen">Welpen</button>
-          <button class="filter-btn" data-filter="bevers">Bevers</button>
-          <button class="filter-btn" data-filter="jonggivers">Jong-Givers</button>
-          <button class="filter-btn" data-filter="givers">Givers</button>
-          <button class="filter-btn" data-filter="jins">Jins</button>
-        </div>
+		<div style="display:flex; flex-wrap:wrap; justify-content:space-around; align-items:center; gap: 1rem; margin-bottom: 2.5rem;">
+          <!-- Filterknoppen per Tak -->
+          <div class="filter-tabs" id="leidingFilterTabs">
+            <button class="filter-btn active" data-filter="kapoenen">Kapoenen</button>
+            <button class="filter-btn" data-filter="welpen">Welpen</button>
+            <button class="filter-btn" data-filter="bevers">Bevers</button>
+            <button class="filter-btn" data-filter="jonggivers">Jong-Givers</button>
+            <button class="filter-btn" data-filter="givers">Givers</button>
+            <button class="filter-btn" data-filter="jins">Jins</button>
+          </div>
+		  <a class="btn btn-primary btn-sm" id="takMailButton" style="display: none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+			<p></p>
+          </a>
+		</div>
 
         <!-- Leiding Tabel -->
         <div class="leiding-table-wrap" id="leidingTable">
