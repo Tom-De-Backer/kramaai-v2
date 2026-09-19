@@ -196,7 +196,7 @@ function initLeidingFilter() {
       if ((filterTak !== 'all' && tak.id !== filterTak) || (filterGRL && tak.id === 'groepsleiding')) return;
 
       tak.leaders.forEach((leader, idx) => {
-        const isHead = leader.isHead ? '<span style="color:var(--color-accent); font-weight:bold; margin-left:6px;" title="Takleiding">★ Takleiding</span>' : '';
+        const isHead = leader.isHead ? '<span style="color:var(--color-accent); font-weight:bold; margin-left:6px;" title="Takverantwoordelijke">★ Takverantwoordelijke</span>' : '';
 
         html += `
           <tr data-tak="${tak.id}">

@@ -293,7 +293,7 @@ const FAQS_DATA = [
   },
   {
     q: "Ledentijdschrift ‘De Kramaai’",
-    a: "De Kramaai is het ledenmagazine van Scouts en Gidsen Kramaai Mollem. Hierin wordt vermeld wat er elke vergadering staat te gebeuren. Ook leuke weetjes, sprookjes, wedstrijden en dergelijke zijn er in terug te vinden. Heb jij de Kramaai niet gekregen via de mail? Geef je takleiding een seintje, dan is er vast en zeker een vergissing gebeurd. U kan de Kramaai ook steeds downloaden onder de rubriek <a href=\"kramaai.html\">Kramaai</a>."
+    a: "De Kramaai is het ledenmagazine van Scouts en Gidsen Kramaai Mollem. Hierin wordt vermeld wat er elke vergadering staat te gebeuren. Ook leuke weetjes, sprookjes, wedstrijden en dergelijke zijn er in terug te vinden. Heb jij de Kramaai niet gekregen via de mail? Geef je takverantwoordelijke een seintje, dan is er vast en zeker een vergissing gebeurd. U kan de Kramaai ook steeds downloaden onder de rubriek <a href=\"kramaai.html\">Kramaai</a>."
   },
   {
     q: "Vanaf welke leeftijd ben je Scoutsrechtig?",
